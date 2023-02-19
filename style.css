@@ -12,22 +12,26 @@ main {
     align-items: center;
 }
 
-.image {
+.image-mobile {
+    display: none;
+}
+
+.image-desktop {
     width: 18.75rem;
-    border-radius: 1rem 0 0 1rem;
-    margin-right: 1.875rem;
+    border-radius: .625rem 0 0 .625rem;
+    margin-right: .75rem;
 }
 
 section {
     background-color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: row;
-    border-radius: 20px;
+    border-radius: .625rem;
     width: 37.5rem;
 }
 
-.product {
-    padding: 2.1875rem;
+.Product {
+    padding: 1rem;
 }
 
 .type {
@@ -41,22 +45,28 @@ section {
 .name {
     font-size: 2rem;
     font-weight: 700;
-    line-height: 0.95;
+    line-height: 1;
     font-family: "Fraunces", sans-serif;
     margin-block: 1.2rem;
+    color: hsl(212, 21%, 14%);
+}
+
+.description {
+    font-size: .875rem;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.7;
 }
 
 .prices {
     display: flex;
     align-items: center;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin: 2.5rem 0 2.5rem 0;
 }
 
 .sale-price {
     font-family: "Fraunces", serif;
     color:hsl(158, 36%, 37%);
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin-right: 1.25rem;
     font-weight: 700;
 }
@@ -105,19 +115,21 @@ footer a {
     }
 
     .name {
-        margin-top: .625rem;
-        margin-bottom: .625rem;
+        margin: .625rem 0 .625rem 0;
     }
 
     .prices {
         display: flex;
         align-items: center;
-        margin-top: 1.25rem;
-        margin-bottom: 1.25rem;
+        margin: 1.25rem 0 1.25rem 0;
     }
 
-    img {
-        width: 100%;
-        border-radius: 1rem 0 1rem 1rem;
+    .image-desktop {
+        display: none
+    }
+    
+    .image-mobile {
+        display: block;
+        border-radius: 1rem 1rem 0 0;
     }
 }
